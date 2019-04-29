@@ -1,0 +1,49 @@
+.servicesQuestions {
+    &__body {
+        background: url(../img/page_services/bgservicesquestions.png);
+        height: 100%;
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 5vw 10vw 14vw;
+        padding: 49px 100px 173px;
+    }
+    &__title {
+        max-width: 385px;
+        margin: 0 auto 17px;
+        font-family: "VastShadow";
+        font-weight: normal;
+        font-size: 38px;
+        line-height: 34px;/* or 89% */
+        line-height: 0.89;
+        text-align: center;
+        color: #110E11;
+    }
+    &__text {
+        max-width: 325px;
+        margin: 0 auto;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;/* identical to box height, or 162% */
+        line-height: 1.62;
+        color: #110E11;
+        a {
+            color: #ED694D;
+        }
+    }
+    .social-icon {
+        margin-right: 0;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .social-icon a {
+        display: inline-block;
+        width: 29px;
+        height: 29px;
+        img {
+            width: 100%
+        }
+    }
+}

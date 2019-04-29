@@ -1,0 +1,78 @@
+.servicesGift {
+    padding-top: 52px;
+    .wrap {
+        text-align: center;
+    }
+    .btn {
+        width: 213px;
+    }
+    .btn--wrap:after {
+        background-size: 92% 72%;
+    }
+    .subtitle {
+        padding-top: 3px;
+        padding-bottom: 31px;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;/* or 162% */
+        line-height: 1.62;
+        text-align: center;
+        color: #505050;
+    }
+    &__part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        padding: 79px 28px 73px 39px;
+        &:first-child {
+            text-align: right;
+            border-right: 1px solid #ED694D;
+        }
+        &:last-child {
+            text-align: left;
+        }
+    }
+    &__navigation {
+        padding-top: 107px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 557px;
+        margin: 0 auto;
+    }
+    &__text {
+        font-family: "VastShadow";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;/* or 150% */
+        line-height: 1.5;
+        color: #000000;
+        &--small {
+            max-width: 97px;
+            text-align: left;
+        }
+    }
+}
+.custom-arrow {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 20px;
+    background: #80CED1;
+    &--right {
+        transform: rotate(180deg);
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        left: -25px;
+        top: -14px;
+
+        border-top: 25px solid transparent;
+        border-right: 25px solid #80CED1;
+        border-bottom: 25px solid transparent; 
+    }
+}

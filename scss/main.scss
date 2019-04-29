@@ -128,6 +128,22 @@ ul,li {
 			background-color: #ed694d;
 		}
 	}
+	&--small {
+		font-size: 28px;
+		line-height: 34px;/* identical to box height, or 121% */
+		line-height: 1.21;
+		span {
+			&:before, &:after {
+				width: 100px;
+			}
+			&:before {
+				left: -123px;
+			}
+			&:after {
+				right: -123px;
+			}
+		}
+	}
 }
 .subtitle {
 	color: #000;
@@ -192,8 +208,31 @@ ul,li {
 			background-color: $accent;
 		}
 	}
+	&--green {
+		background: #7FD77A;
+		&:before, &:after {
+			background-color: #7FD77A;
+		}
+	}
+	&--darkblue {
+		background: #3E8587;
+		&:before, &:after {
+			background-color: #3E8587;
+		}
+	}
+	&--blue {
+		background: #80CED1;
+		&:before, &:after {
+			background-color: #80CED1;
+		}
+	}
+
+	&--small {
+		width: 112px;
+	}
 	&--wrap {
 		position: relative;
+		display: inline-block;
 		overflow: hidden;
 		z-index: 2;
 		&:after {
@@ -204,24 +243,56 @@ ul,li {
 			width: 100%;
 			height: 100%;
 			background: url('../img/bgbtn.png') no-repeat;
-			background-size: 88% 72%;
+			background-size: 82% 72%;
 			background-position-x: 10px;
 			background-position-y: 7px;
 			pointer-events: none;
 		}
-		&--thin:after {
-			background-size: 92% 71%;
-		}
 		
-	}
-	&--thin {
-		padding: 11px;
-		&:before, &:after {
-			width: 35px;
-			height: 35px;
-			top: 12%;
+		&--left{
+			&:after {
+				background-image: url('../img/page_services/bgbtn-left.png');
+				background-size: 86% 72%;
+				background-position-x: 12px;
+			}
+			.btn {
+				margin-right: 5px;
+				&:after {
+					content: none;
+				}
+			}
+
+		}
+		&--right {
+			&:after {
+				background-image: url('../img/page_services/bgbtn-left.png');
+				background-size: 86% 72%;
+				background-position-x: 12px;
+				transform: rotate(180deg);
+			}
+			.btn {
+				margin-left: 5px;
+				&:before {
+					content: none;
+				}
+			}
+		}
+		&--thin {
+
+			.btn {
+				padding: 6px;
+				&:before, &:after {
+					width: 35px;
+					height: 35px;
+					top: 12%;
+				}
+			}
+			&:after {
+				background-size: 89% 71%;
+			}
 		}
 	}
+	
 	&--big {
 		width: 212px;
 	}
@@ -278,8 +349,15 @@ ul,li {
 		}
 	}
 }
+.tabs__content {
+	display: none; /* по умолчанию прячем все блоки */
+  }
+  .tabs__content.active {
+	display: block; /* по умолчанию показываем нужный блок */
+  }
 
 
+@import "sections/nav";
 @import "sections/header";
 @import "sections/directions";
 @import "sections/tv";
@@ -289,8 +367,15 @@ ul,li {
 @import "sections/free";
 @import "sections/questions";
 @import "sections/contact";
+@import "sections/footer"; 
 
 @import "sections/page404"; 
-@import "sections/footer"; 
+
+@import "sections/servicesAbout"; 
+@import "sections/servicesPacks"; 
+@import "sections/servicesFirst"; 
+@import "sections/servicesExtra";
+@import "sections/servicesQuestions";
+@import "sections/servicesGift";
 
 @import "media"; // Always at the end

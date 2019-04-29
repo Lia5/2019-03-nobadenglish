@@ -13,13 +13,18 @@
         padding-bottom: 0;
     }
     &__text {
-        max-width: 37vw;
-        padding: 8vw 5vw 13vw 5vw;
+        // max-width: 37vw;
+        // padding: 8vw 5vw 13vw 5vw;
+
+        padding: 87px 70px;
+        max-width: 512px;
         font-family: "Montserrat";
     }
     &__numbers {
-        padding: 17vw 9vw 2vw 2vw;
-        max-width: 24vw;
+        // padding: 17vw 9vw 2vw 2vw;
+        // max-width: 24vw;
+        padding: 211px 14px 150px 25px;
+        max-width: 298px;
         text-shadow: 2px 2px 0 #000000;
         color: #ffffff;
         font-family: "VastShadow";

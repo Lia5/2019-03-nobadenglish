@@ -1,0 +1,17 @@
+.servicesFirst {
+    padding-top: 64px;
+    .tv__form {
+        margin-top: 27px;
+        &-wrap {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .tv__min-text {
+        font-size: 14px;
+        padding-right: 0;
+    }
+    .subtitle {
+        padding-top: 12px;
+    }
+}
