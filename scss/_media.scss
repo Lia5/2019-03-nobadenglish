@@ -14,10 +14,14 @@
         max-width: 37vw;
         padding: 8vw 5vw 13vw 5vw;
     }
+    //page Services
+    .servicesAbout, 
+    .servicesPacks { 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
-@media only screen and (max-width: 980px) {
-  
-}
+
 @media only screen and (max-width: 1040px) {
     .nav {
         .logo {
@@ -248,6 +252,21 @@
             order: 1;
         }
     }
+    //page Services
+    .servicesAbout {
+        &__text {
+            width: 100%;
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+    .servicesPacks {
+        &__text {
+            width: 100%;
+        }
+    }
+    
 }
 @media only screen and (max-width: 760px) {
     .services__body {

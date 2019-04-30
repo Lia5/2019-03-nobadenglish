@@ -2776,7 +2776,7 @@ nav a {
   color: #000000;
 }
 
-.servicesAbout .servicesAbout__btn {
+.servicesAbout__btn {
   width: 28%;
   text-align: right;
 }
@@ -2856,6 +2856,7 @@ nav a {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-top: 26px;
 }
 
 .servicesPacks__item {
@@ -2880,7 +2881,7 @@ nav a {
           box-shadow: 9px 7px 0px rgba(95, 44, 26, 0.125519);
   -webkit-border-radius: 8px;
           border-radius: 8px;
-  padding: 39px 36px 28px 39px;
+  padding: 12px 36px 28px 39px;
   position: relative;
 }
 
@@ -2889,10 +2890,12 @@ nav a {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-          transform: scale(0.8);
-  border: 1px dashed #fff;
+  left: 0;
+  top: 0;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  border: 1px dashed #C45085;
   pointer-events: none;
 }
 
@@ -3337,6 +3340,11 @@ nav a {
     max-width: 37vw;
     padding: 8vw 5vw 13vw 5vw;
   }
+  .servicesAbout,
+  .servicesPacks {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media only screen and (max-width: 1040px) {
@@ -3610,6 +3618,15 @@ nav a {
     -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .servicesAbout__text {
+    width: 100%;
+  }
+  .servicesAbout__btn {
+    width: 100%;
+  }
+  .servicesPacks__text {
+    width: 100%;
   }
 }
 
