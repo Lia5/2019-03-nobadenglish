@@ -3428,13 +3428,13 @@ nav a {
       -ms-flex-align: center;
           align-items: center;
   background: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   padding: 15px 18px;
   min-height: 80px;
 }
 
 .themes__item .btn {
-  width: 138px;
+  width: 108px;
 }
 
 .themes__name {
@@ -3444,11 +3444,20 @@ nav a {
   padding-right: 30px;
 }
 
+.themes__btn--global {
+  text-align: center;
+  margin-top: 39px;
+}
+
+.themes__btn--global .btn {
+  width: 160px;
+}
+
 .search {
   cursor: pointer;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 20px;
+  top: 10px;
   width: 40px;
   height: 40px;
   padding: 10px;
