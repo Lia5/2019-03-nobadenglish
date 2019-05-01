@@ -35,7 +35,6 @@
     &__items {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
         padding-top: 26px;
 
     }
@@ -84,6 +83,9 @@
         .btn {
             min-width: 94px;
         }
+    }
+    .btn--wrap:after {
+        background-size: 83% 72%;
     }
 }
 

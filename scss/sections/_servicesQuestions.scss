@@ -38,10 +38,12 @@
         display: inline-block;
         vertical-align: middle;
     }
-    .social-icon a {
-        display: inline-block;
+    .social-icon--inst {
         width: 29px;
         height: 29px;
+    }
+    .social-icon a {
+        display: inline-block;
         img {
             width: 100%
         }

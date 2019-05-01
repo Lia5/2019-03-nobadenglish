@@ -228,7 +228,9 @@ ul,li {
 	}
 
 	&--small {
-		width: 112px;
+		.btn {
+			width: 112px;
+		}
 	}
 	&--wrap {
 		position: relative;
@@ -243,7 +245,7 @@ ul,li {
 			width: 100%;
 			height: 100%;
 			background: url('../img/bgbtn.png') no-repeat;
-			background-size: 82% 72%;
+			background-size: 87% 72%;
 			background-position-x: 10px;
 			background-position-y: 7px;
 			pointer-events: none;
@@ -284,7 +286,7 @@ ul,li {
 				&:before, &:after {
 					width: 35px;
 					height: 35px;
-					top: 12%;
+					top: 3%;
 				}
 			}
 			&:after {
@@ -377,5 +379,7 @@ ul,li {
 @import "sections/servicesExtra";
 @import "sections/servicesQuestions";
 @import "sections/servicesGift";
+
+@import "sections/listing";
 
 @import "media"; // Always at the end

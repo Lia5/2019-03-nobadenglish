@@ -1,6 +1,9 @@
 .servicesAbout {
     padding-top: 52px;
     padding-bottom: 36px;
+    .btn--wrap:after {
+        background-size: 93% 72%;
+    }
     &__body {
         display: flex;
         justify-content: space-between;
@@ -53,9 +56,14 @@
         margin-bottom: 24px;
     }
     .btn--small {
-        width: 216px;
+        .btn {
+            width: 216px;
+        }
+        &:after {
+            background-size: 90% 72%;
+            background-position-x: 13px;
+        }
+        
     }
-    .btn--wrap:after {
-        background-size: 93% 72%;
-    }
+
 }
