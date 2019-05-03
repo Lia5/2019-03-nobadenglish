@@ -1333,6 +1333,7 @@ ul, li {
 .btn--wrap--thin:after {
   -webkit-background-size: 89% 71%;
           background-size: 89% 71%;
+  background-position-y: 5px;
 }
 
 .btn--big {
@@ -3378,6 +3379,14 @@ nav a {
   background: #fff;
 }
 
+.listing__order--wrap {
+  padding: 58px 15px 26px;
+}
+
+.listing__order .title {
+  margin-bottom: 29px;
+}
+
 .listing__order .free__form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3388,6 +3397,8 @@ nav a {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 295px;
+  margin: 0 auto;
 }
 
 .listing__order .input--wrap {
@@ -3401,6 +3412,17 @@ nav a {
       -ms-transform: none;
           transform: none;
   padding-right: 0;
+  font-size: 14px;
+  margin-bottom: 9px;
+}
+
+.listing__order .jq-selectbox__select-text {
+  text-align: left;
+}
+
+.listing__order .btn--wrap:after {
+  -webkit-background-size: 91% 72%;
+          background-size: 91% 72%;
 }
 
 .listing .input--wrap {
@@ -3430,11 +3452,15 @@ nav a {
   background: #fff;
   margin-bottom: 19px;
   padding: 15px 18px;
-  min-height: 80px;
+  min-height: 81px;
 }
 
 .themes__item .btn {
   width: 108px;
+}
+
+.themes__item .btn--wrap:after {
+  background-position-x: 8px;
 }
 
 .themes__name {
@@ -3470,7 +3496,23 @@ nav a {
 
 .search--wrap {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
+}
+
+.search input::-webkit-input-placeholder {
+  color: #BABABA;
+}
+
+.search input:-ms-input-placeholder {
+  color: #BABABA;
+}
+
+.search input::-ms-input-placeholder {
+  color: #BABABA;
+}
+
+.search input::placeholder {
+  color: #BABABA;
 }
 
 @media only screen and (max-width: 1240px) {
@@ -3517,6 +3559,10 @@ nav a {
   .servicesQuestions .social-icon--inst {
     width: 2vw;
     height: 2vw;
+  }
+  .listing__body {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -3866,6 +3912,9 @@ nav a {
   .servicesPacks__item, .servicesPacks__btn {
     width: 100%;
   }
+  .listing__order--wrap {
+    padding: 40px 15px 20px;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -3979,6 +4028,28 @@ nav a {
   .servicesQuestions .social-icon--inst {
     width: 8vw;
     height: 8vw;
+  }
+  .listing__body {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .listing__themes {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .listing__order {
+    width: 100%;
+    border: 8px solid #D1C1A7;
+    background: #D1C1A7;
+    margin-bottom: 67px;
+  }
+  .listing__order--wrap {
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    background: #FFF0DF;
   }
 }
 
@@ -4657,5 +4728,73 @@ nav a {
   }
   .custom-arrow--right {
     width: 37px;
+  }
+  .listing {
+    padding-top: 36px;
+  }
+  .listing .subtitle {
+    padding-top: 3px;
+    font-size: 13px;
+  }
+  .listing__body {
+    padding-top: 36px;
+  }
+  .listing__themes {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .listing .themes {
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-bottom: 59px;
+  }
+  .listing .themes__item {
+    padding: 12px 25px;
+    min-height: 62px;
+  }
+  .listing .themes__item .btn {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+  .listing .themes__item .btn input {
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+  }
+  .listing .themes__item .btn:before, .listing .themes__item .btn:after {
+    content: none;
+  }
+  .listing .themes__item .btn--wrap {
+    font-size: 0;
+    line-height: 0;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #80CED1;
+    border-bottom: 15px solid transparent;
+  }
+  .listing .themes__item .btn--wrap:after {
+    content: none;
+  }
+  .listing .input--wrap input {
+    padding: 18px 10px 14px;
+  }
+  .listing .search {
+    right: 19px;
+    top: 12px;
+    width: 37px;
+    height: 37px;
+  }
+  .listing__order--wrap {
+    padding-top: 28px;
+  }
+  .listing__order .title {
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+  .listing__order .tv__min-text {
+    font-size: 12px;
   }
 }
