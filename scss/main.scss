@@ -354,11 +354,13 @@ ul,li {
 }
 .tabs__content {
 	display: none; /* по умолчанию прячем все блоки */
-  }
-  .tabs__content.active {
+}
+.tabs__content.active {
 	display: block; /* по умолчанию показываем нужный блок */
-  }
-
+}
+.display-none {
+	display: none;
+}
 
 @import "sections/nav";
 @import "sections/header";
@@ -382,5 +384,6 @@ ul,li {
 @import "sections/servicesGift";
 
 @import "sections/listing";
+@import "sections/task";
 
 @import "media"; // Always at the end
