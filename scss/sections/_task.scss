@@ -124,6 +124,9 @@
                 width: 100%;
             }
         }
+        &-mob {
+            display: none;
+        }
         &-text {
             max-width: 340px;
             font-family: "VastShadow";

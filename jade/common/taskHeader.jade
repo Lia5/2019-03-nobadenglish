@@ -1,6 +1,6 @@
 section.task
     .wrap
-        .title
+        .title.title-main
             span To Be in Present Simple
         .subtitle Helpful rules and exercises
         .title.title--small.title--rule
@@ -18,7 +18,8 @@ section.task
         .task__pic
             img(src="img/page_task/examples1.jpg", alt="examples")
         .title.title--small.title--check
-            span Check yourself    
+            span Check yourself
+        .subtitle Helpful rules and exercises    
         ol.task__items
             li.task__item
                 .task__options.option
@@ -33,8 +34,8 @@ section.task
             li.task__item
                 .task__options.option
                     .option__name Response options:
-                    ul.option__items
-                        li.option__item I used to get up at seven
+                    ul.option__items.option__items-mcol
+                        li.option__item.active I used to get up at seven
                         li.option__item What time did you use to
                         li.option__item He didn’t use to wake
                 .task__qa 
@@ -61,4 +62,6 @@ section.task
             .task__result-foto
                 img(src="img/page_task/result-yes.jpg", alt="result")
                 img.display-none(src="img/page_task/result-no.jpg", alt="result")
+            .task__result-mob
+                .task__result--tick
             .task__result-text Revise the rule again and try one more time!
