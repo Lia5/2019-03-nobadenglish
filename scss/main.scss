@@ -351,6 +351,12 @@ ul,li {
 			}
 		}
 	}
+	input {
+		cursor: pointer;
+	}
+	a {
+		color: #fff;
+	}
 }
 .tabs__content {
 	display: none; /* по умолчанию прячем все блоки */

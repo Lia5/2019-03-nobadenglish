@@ -1403,6 +1403,14 @@ ul, li {
           transform: rotate(-45deg) skew(13deg, 13deg);
 }
 
+.btn input {
+  cursor: pointer;
+}
+
+.btn a {
+  color: #fff;
+}
+
 .tabs__content {
   display: none;
   /* по умолчанию прячем все блоки */
@@ -3852,6 +3860,11 @@ nav a {
 .taskFirst__form .input--wrap input {
   padding-top: 18px;
   padding-bottom: 14px;
+}
+
+.taskFirst__form .btn--wrap:after {
+  -webkit-background-size: 91% 72%;
+          background-size: 91% 72%;
 }
 
 @media only screen and (max-width: 1240px) {
