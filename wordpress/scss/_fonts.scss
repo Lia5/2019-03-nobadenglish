@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("Alegreya", "../fonts/Alegreya-Medium/Alegreya-Medium", 500);
+@include font-face("BernierDistressed", "../fonts/BernierDistressed-Regular/BernierDistressed-Regular", 400);
+@include font-face("VastShadow", "../fonts/VastShadow-Regular/VastShadow-Regular", 400);
+@include font-face("Montserrat", "../fonts/Montserrat-Medium/Montserrat-Medium", 500);

@@ -1,0 +1,99 @@
+.servicesPage {
+    &__title {
+
+        width: 100%;
+        font-family: "VastShadow";
+        font-size: 18px;
+        line-height: 34px;
+        line-height: 1.89;
+        color: #110E11;
+        span {
+            font-size: 28px;
+        }
+    }
+    &__subtitle {
+        font-family: "Alegreya";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;/* or 157% */
+        line-height: 1.57;
+        color: #505050;
+    }
+}
+.servicesPacks {
+    &__tabs {
+        padding-top: 37px;
+        .btn {
+            min-width: 167px;
+        }
+    }
+    .tabs__caption {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 26px;
+
+    }
+    &__item {
+        width: 48%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        background: #FFFFFF;
+        box-shadow: 9px 7px 0px rgba(95, 44, 26, 0.125519);
+        border-radius: 8px;
+        padding: 12px 36px 28px 39px;
+
+    }
+
+    &__text {
+        width: 73%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;/* or 150% */
+        line-height: 1.5;
+        color: #505050;
+        p {
+            margin: 0;
+        }
+    }
+    &__btn {
+        width: 27%;
+        text-align: right;
+        .btn {
+            min-width: 94px;
+        }
+    }
+    .btn--wrap:after {
+        background-size: 83% 72%;
+    }
+}
+.item-border {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        left: 10px;
+        top: 10px;
+        background: url(../img/border-bg.png) no-repeat;
+        background-size: cover;
+        background-size: 100% 100%;
+        pointer-events: none;
+
+
+    }
+}
+.item-border2 {
+    &:after {
+        background-image: url(../img/border2-bg.png);
+    }
+}

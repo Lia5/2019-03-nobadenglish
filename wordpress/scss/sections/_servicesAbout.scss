@@ -1,0 +1,70 @@
+.servicesAbout {
+    padding-top: 52px;
+    padding-bottom: 36px;
+    .btn--wrap:after {
+        background-size: 93% 72%;
+    }
+    &__body {
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        border: 8px solid #C45085;
+        border-radius: 8px;
+        padding: 38px 42px 46px 44px;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 82px;
+            bottom: -62px;
+            background: url(../img/page_services/25hour.png) no-repeat;
+            width: 122px;
+            height: 122px;
+        }
+    }
+    .title {
+        width: 100%;
+        text-align: left;
+        color: #C45085;
+        font-size: 48px;
+        line-height: 34px;/* identical to box height, or 71% */
+        line-height: 0.71;
+        span:before, span:after {
+            content: none;
+        }
+    }
+    &__text {
+        width: 72%;
+    }
+
+    p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 26px;
+
+        color: #000000;
+
+    }
+    &__btn  {
+        width: 28%;
+        text-align: right;
+    }
+    &__btn {
+        align-self: flex-end;
+        margin-bottom: 24px;
+    }
+    .btn--small {
+        .btn {
+            width: 216px;
+        }
+        &:after {
+            background-size: 90% 72%;
+            background-position-x: 13px;
+        }
+        
+    }
+
+}

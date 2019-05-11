@@ -1,0 +1,110 @@
+.footer {
+    padding: 59px 50px 59px;
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        height: 190px;
+        font-family: "Alegreya";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        padding: 7px 106px 0px 34px;
+        color: #110E11;
+        // ul {
+        //     display: flex;
+        //     justify-content: center;
+        //     // white-space: nowrap;
+        // }
+        &>li {
+            padding: 0 5px;
+        }
+        .active>a {
+            color: #EE684D;
+        }
+        a {
+            display: block;
+            
+            color: #110E11;
+        }
+    }
+    &__services {
+        width: 272px;
+        cursor: pointer;
+    }
+
+    &__btn {
+        padding-right: 17px;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            right: -0;
+            top: 50%;
+            transform: translate(0, -50%) ;
+            border-top: 7px solid #80CED1;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+        }
+    }
+    &__body {
+        padding-top: 23px;
+        padding-bottom: 48px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 4px solid #42403e;
+        border-bottom: 1px solid #42403E;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 100%;
+            height: 1px;
+            background-color: #42403e;
+        }
+    }
+    &__bottom {
+        position: relative;
+        padding-top: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        a {
+            display: block;
+        }
+
+    }
+    &__development {
+        a {
+            color: #FF5F41; 
+        }
+    }
+    &__list {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column; 
+ 
+        background-color: #fef6ed;
+
+    }
+    .social-icons {
+        margin-top: 0;
+        justify-content: space-around;
+        margin-bottom: 22px;
+    }
+}
+.copy {
+    position: absolute;
+    left: 0;
+    top: -137px;
+    width: 149px;
+    height: 46px;
+    img {
+        width: 100%;
+    }
+}

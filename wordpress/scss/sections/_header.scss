@@ -1,0 +1,49 @@
+.header {
+    margin-top: 16px;
+    height: 100%;
+    .wrap {
+        background: url('../img/bgheader.jpg');
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__title {
+        padding: 5vw 0vw 16vw 32.5vw;
+        padding: 85px 0 246px 478px;
+        h1 {
+            color: #110e11;
+            font-family: "VastShadow";
+            font-size: 38px;
+            // font-size: 2.7vw;         
+            font-weight: 400;
+            line-height: 52px;
+            // line-height: 4vw;
+            margin-bottom: 0;
+            
+        }
+        span {
+            color: #ed694d;
+            font-size: 44px;
+            // font-size: 3vw;
+        }
+        p {
+            
+            font-family: "Montserrat", 'Segoe UI', Tahoma, Verdana, sans-serif;
+            margin: 1vw 0 0 0;
+            color: #110e11;
+            // font-size: 16px;
+            font-size: 1.2vw;
+            line-height: 2vw;
+            max-width: 30vw;
+            max-width: 370px;
+            font-size: 18px;
+            line-height: 1.4;
+            margin-top: 29px;
+        }
+    }
+}
+//header
