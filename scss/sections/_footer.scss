@@ -88,13 +88,9 @@
         padding-top: 10px;
         display: flex;
         flex-direction: column; 
-        display: none;
+ 
         background-color: #fef6ed;
-        &.active {
-            display: flex;
-            position: relative;
-            z-index: 1;
-        }
+
     }
     .social-icons {
         margin-top: 0;

@@ -20,6 +20,7 @@
         }
     }
     &--play {
+
         position: absolute;
         right: 6px;
         bottom: 50px;
@@ -114,17 +115,9 @@
         display: flex;
         justify-content: flex-end;
     }
-    &__video {
-        font-family: "Alegreya";
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: right;
-
-        color: #80CED1;
-    }
 } 
 .slick-arrow {
+    cursor: pointer;
     position: absolute;
     width: 60px;
     height: 38px;
@@ -153,9 +146,11 @@
     transform: translate(-50%, 0);
     li {
         display: inline-block;
-        margin: 0 10px;
+        padding: 0 10px;
+        cursor: pointer;
     }
     button {
+        cursor: pointer;
         font-size: 0;
         padding: 0;
         border-radius: 50%;

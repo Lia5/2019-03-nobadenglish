@@ -17,14 +17,18 @@
         flex-grow: 1;
         max-width: 184px;
         position: relative;
+        color: #fff;
+        &:hover {
+            transform: scale(0.9);
+        }
         &--blue {
             background-color: #4aa699;
         }
         &--bord {
             background-color: #c45085;
-            .directions__pic {
-                width: 64px;
-            }
+            // .directions__pic {
+            //     width: 64px;
+            // }
         }
         &--yellow {
             background-color: #d9af40;

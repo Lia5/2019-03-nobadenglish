@@ -50,7 +50,7 @@ nav {
 }
 .main-menu {
 
-    ul {
+    &>ul {
         display: flex;
         flex-grow: 1;
         justify-content: space-around;
@@ -60,8 +60,14 @@ nav {
         padding: 6px 19px;
 
     }
+    li {
+        border: 1px dashed transparent;
+    }
     li.active {
-        border: 1px dashed $accent;
+        border-color: $accent;
+    }
+    li:hover {
+        border-color: #ee684d;
     }
 
 }
@@ -71,5 +77,38 @@ nav {
     height: 80px;
     img {
         width: 100%;
+    }
+}
+.services__btn {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    padding: 6px 19px;
+    &:after {
+        content: "";
+        position: absolute;
+        right: 4px;
+        top: 50%;
+        transform: translate(0, -50%) ;
+        border-top: 7px solid #80CED1;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+    &:hover .services__list {
+        display: flex;
+    }
+}
+.services__list {
+    padding-top: 2px;
+    min-width: 345px;
+    display: none;
+
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 41px;
+    left: 0;
+    li {
+        background-color: #fef6ed;
     }
 }

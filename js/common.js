@@ -27,7 +27,7 @@ if(jQuery('.directions__items').length) {
           breakpoint: 1040,
           settings: {
             slidesToShow: 3.2,
-            slidesToScroll: 1,
+            slidesToScroll: 3,
             infinite: true,
             arrows: false,
             dots: false
@@ -55,11 +55,11 @@ if($('.styled').length) {
     });
 
 //footer
-var footerBtn = document.querySelector('.footer__btn');
-    footerBtn.addEventListener('click', function(){
-        var footerList = document.querySelector('.footer__list');
-        footerList.classList.toggle('active');
-    });
+// var footerBtn = document.querySelector('.services__btn');
+//     footerBtn.addEventListener('click', function(){
+//         var footerList = document.querySelector('.services__list');
+//         footerList.classList.toggle('active');
+//     });
 
 //tabs
     (function($) {
