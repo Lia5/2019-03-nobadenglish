@@ -3,7 +3,7 @@ nav
 	.wrap
 		.nav
 			.logo
-				.logo__icon
+				a(href="index.html").logo__icon
 					img(src="img/logo.png", alt="logo")
 			.menu-wrap
 				.menu-toggle 
@@ -14,9 +14,9 @@ nav
 				nav.main-menu 
 					ul
 						li.active
-							a(href="#") Home
+							a(href="index.html") Home
 						li
-							a(href="#") About us
+							a(href="#" data-menuAnchor="#about") About us
 						li
 							.services__btn Services
 								ul.services__list
@@ -37,9 +37,9 @@ nav
 						li
 							a(href="#") Vocabulary
 						li
-							a(href="#") Contact us
+							a(href="#" data-menuAnchor="#contactus") Contact us
 						li
-							a(href="#") Reviews
+							a(href="#" data-menuAnchor="#reviews") Reviews
 					.btn--wrap.btn--wrap--thin
 						.btn.btn--blue Get your first lesson
 

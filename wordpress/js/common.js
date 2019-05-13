@@ -53,7 +53,13 @@ if($('.styled').length) {
         var navGamb = document.querySelector('.menu-toggle');
         navGamb.classList.toggle('active');
     });
-
+//anhor-menu
+$('.main-menu a').on('click', function(e){
+  var dataName = $(this).attr('data-menuAnchor');
+  e.preventDefault();
+  var id = $('[data-anchor="'+ dataName + '"]');
+  $('html,body').stop().animate({ scrollTop: $(id).offset().top }, 1000);
+});
 //footer
 // var footerBtn = document.querySelector('.services__btn');
 //     footerBtn.addEventListener('click', function(){
