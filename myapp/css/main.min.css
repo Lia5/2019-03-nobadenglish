@@ -2033,10 +2033,6 @@ nav a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -2108,6 +2104,10 @@ nav a {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   border: 6px solid #dcdcdc;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center;
 }
 
 .reviews__foto img {
@@ -2442,8 +2442,10 @@ nav a {
 .free__video .btn__movie {
   top: auto;
   left: auto;
-  right: 75px;
-  bottom: 75px;
+  right: 15px;
+  bottom: 15px;
+  width: 60px;
+  height: 60px;
 }
 
 .free__form {

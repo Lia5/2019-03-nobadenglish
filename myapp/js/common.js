@@ -54,18 +54,67 @@ if($('.styled').length) {
         navGamb.classList.toggle('active');
     });
 //anhor-menu
-$('.main-menu a').on('click', function(e){
-  var dataName = $(this).attr('data-menuAnchor');
-  e.preventDefault();
-  var id = $('[data-anchor="'+ dataName + '"]');
-  $('html,body').stop().animate({ scrollTop: $(id).offset().top }, 1000);
-});
-//footer
-// var footerBtn = document.querySelector('.services__btn');
-//     footerBtn.addEventListener('click', function(){
-//         var footerList = document.querySelector('.services__list');
-//         footerList.classList.toggle('active');
-//     });
+// $('.main-menu a').on('click', function(e){
+//   var dataName = $(this).attr('data-menuAnchor');
+//   e.preventDefault();
+//   var id = $('[data-anchor="'+ dataName + '"]');
+//   $('html,body').stop().animate({ scrollTop: $(id).offset().top }, 1000);
+// });
+//scrolling
+
+// var $page = $('html, body');
+// $('a[href*="#"]').click(function() {
+//     $page.animate({
+      
+//         scrollTop: $($.attr(this, 'href')).offset().top
+//     }, 400);
+//     return false;
+// });
+
+
+
+if( window.innerWidth > 720 || window.screen.width > 720){
+  var linkNav = document.querySelectorAll('.main-menu [href*="#"]'), //выбираем все ссылки к якорю на странице
+  V = 0.25; // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+} else {
+var linkNav = document.querySelectorAll('.main-menu [href*="#"]'), //выбираем все ссылки к якорю на странице
+V = 0; // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+}
+
+for (var i = 0; i < linkNav.length; i++) {
+linkNav[i].addEventListener('click', function (e) { //по клику на ссылку
+    var w = window.pageYOffset, // производим прокрутка прокрутка
+      hash = this.href.replace(/[^#]*(.*)/, '$1'); // к id элемента, к которому нужно перейти
+      console.log(hash);
+  t = document.querySelector(hash).getBoundingClientRect().top, // отступ от окна браузера до id
+      start = null;
+e.preventDefault(); //отменяем стандартное поведение
+
+
+  requestAnimationFrame(step); // подробнее про функцию анимации [developer.mozilla.org]
+  function step(time) {
+      if (start === null) start = time;
+      var progress = time - start,
+          r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
+      window.scrollTo(0, r);
+      if (r != w + t) {
+          requestAnimationFrame(step)
+      } else {
+          location.hash = hash // URL с хэшем
+      }
+  }
+  var nav = document.querySelector('.main-menu');
+  nav.classList.toggle('active');
+  if( window.innerWidth <= 720 || window.screen.width <= 720){
+      var nav2 = document.querySelector('.menu-wrap');
+      nav2.classList.toggle('active');
+      var nav3 = document.querySelector('.menu-toggle');
+      nav3.classList.toggle('active');
+  }
+
+}, false);
+
+}
 
 //tabs
     (function($) {
